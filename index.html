@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Olivia Schif Developer Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
  </head>
  <body>
 
-<header>
+    
+ <div class="header">
     <h1>Olivia Schif</h1>
-    <p>Responsive Design, HTML, CSS</p>
-    <nav class="navbar">
-        <ul class=""nav-list>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a  href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+    <h2>Responsive Design, HTML, CSS</h2>
+    <div class="links">
+        <ul>
+            <li><a class="info-bar" href="#about-me">About Me</a></li>
+            <li><a class="info-bar" href="#work">Work</a></li>
+            <li><a class="info-bar" href="#contact-me">Contact Me</a></li>
         </ul>
-    </nav>
-</header>
+    </div>
+ </div>
 
 <main>
-<aside>
-    <h1>About Me</h1>
-    <h1>Work</h1>
-    <h1>Contact Me</h1>
-</aside>
+ <!--   
+<div class="side-column">
+    <h1 class="side-about">About Me</h1>
+    <h1 class="side-work">Work</h1>
+    <h1 class="side-contact">Contact Me</h1>
+</div>
+-->
 <!--add image of self-->
-<section class="about-me">
-    <div class="about-me">
+<div class="about-me">
+    <div>
+        <img class="port-img" src="./assets/images/Portfolio-photo.jpg" alt="olivia with beach in background">
+    </div>
+    <div class="ab-text">
+      <h3>About Me</h3>
       <p>Hi, my name is Olivia Schif! I live in Kansas City and I am a Web Developer. In January of 2023 I earned my certifaction in HTML and CSS and I am currently a student at KU in the coding bootcamp.
       </p>
     </div>
-</section> 
+</div> 
+
+
+
+
 <!--link project webpages here-->   
-<section class="work">
+<section id="work" class="work">
     <div class="work">
         <a href="" class="work-tile">
             <img class="work-image" src="" alt="">
@@ -65,7 +77,7 @@
 </main>
 </section>
 <!--add icon to all the links-->
-<footer class="contact-me">
+<footer id="contact-me" class="contact-me">
     <h3 class="contact-me"></h3>
     <a class="btn-contact" href="https://open.spotify.com/user/livschif">Spotify
     </a>
