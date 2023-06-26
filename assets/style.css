@@ -5,6 +5,7 @@
     --white: #ffffff;
     --alt-bck: rgb(17, 52, 17);
     --alt-col: #091a02;
+    --alt-text: rgb(138, 220, 120);
 }
 
 * {
@@ -44,17 +45,6 @@ a {
   color: var(--grey);
 }
 
-@media screen and (max-width: 1000px) {
-    .navbar {
-        background-color: var(--alt-bck);
-        color: var(--white);
-    }
-    .info-bar {
-        background-color: var(--alt-bck);
-        color: var(--white);
-    }
-}
-
 .links ul {
     display: flex;
     gap: 20px;
@@ -73,6 +63,17 @@ li:hover {
     transition: 0.3s ease;
 }
 
+@media screen and (max-width: 1000px) {
+    .navbar {
+        background-color: var(--alt-bck);
+        color: var(--alt-text);
+    }
+    .info-bar {
+        background-color: var(--alt-bck);
+        color: var(--alt-text);
+    }
+}
+
 /* about me */
   .about-me {
     display: grid;
@@ -84,7 +85,7 @@ li:hover {
   @media screen and (max-width: 1000px) {
     .about-me {
         background-color: var(--alt-col);
-        color: var(--white);
+        color: var(--alt-text);
     }
 }
 
@@ -100,22 +101,27 @@ li:hover {
     padding: 20px;
     line-height: 4rem;
   }
-p {
-    font-size: 25px;
-    width: 800px;
+
+.p {
+    
+    font-size: 20px;
+    width: 650px;
     height: 200px;
+    overflow:hidden;
 }
 
 /* work section*/
+.work {
+    background-color: var(--body-yellow);
+    color: var(--grey);
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
-.work {
-  background-color: var(--body-yellow);
-  color: var(--grey);
-  width: 100%;
-}
+
 .work-text {
     padding: 20px;
 }
@@ -163,6 +169,17 @@ h4 span {
     padding: 10px; 
 }
 
+@media screen and (max-width: 1000px) {
+    .work {
+        background-color: var(--alt-col);
+        color: var(--alt-text);
+    }
+
+    h4 span {
+        background: var(--alt-col);
+        color: var(--alt-text);
+    }
+}
 /* contact section*/
 
 .contact-me {
@@ -187,4 +204,14 @@ h4 span {
 
 .btn-contact:hover {
     transform: translateY(8px);
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-me {
+        background-color: var(--alt-col);
+        color: var(--alt-text);
+    }
+    .btn-contact {
+        color: var(--alt-text);
+    }
 }
