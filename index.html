@@ -22,15 +22,9 @@
  </div>
 
 <main>
- <!--   
-<div class="side-column">
-    <h1 class="side-about">About Me</h1>
-    <h1 class="side-work">Work</h1>
-    <h1 class="side-contact">Contact Me</h1>
-</div>
--->
+
 <!--add image of self-->
-<div class="about-me">
+<div id="about-me" class="about-me">
     <div>
         <img class="port-img" src="./assets/images/Portfolio-photo.jpg" alt="olivia with beach in background">
     </div>
@@ -45,41 +39,57 @@
 
 
 <!--link project webpages here-->   
-<section id="work" class="work">
-    <div class="work">
-        <a href="" class="work-tile">
-            <img class="work-image" src="" alt="">
-            <p class=""work-title>Work title 1
-            </p>
+<div id="work" class="work">
+        <h3 class="work-text">Work</h3>
+    <div class="work-grid">  
+        <a href="https://livschif.github.io/Survey-form/" class="work-tile">
+            <img class="img-tile survey" src="./assets/images/Survey-form.png" alt="Survey Form">
+            <h4 class="work-title">
+            <span>Vacation Survey Form
+            </span>
+            </h4>
+        </a>
+        <a href="https://livschif.github.io/Tribute-page/" class="work-tile">
+            <img class="img-tile tribute" src="./assets/images/tribute-page.png" alt="Tribute">
+            <h4 class="work-title">
+            <span>Tribute Page
+            </span>
+            </h4>
         </a>
         <a href="" class="work-tile">
-            <img class="work-image" src="" alt="">
-            <p class=""work-title>Work title 2
-            </p>
+            <img class="img-tile placeholder" src="./assets/images/placeholder.png" alt="placeholder image">
+            <h4 class="work-title">
+            <span>In the Making
+            </span>
+            </h4>
         </a>
         <a href="" class="work-tile">
-            <img class="work-image" src="" alt="">
-            <p class=""work-title>Work title 3
-            </p>
+            <img class="img-tile placeholder" src="./assets/images/placeholder.png" alt="placeholder image">
+            <h4 class="work-title">
+                <span>In the Making
+                </span>
+            </h4>
         </a>
         <a href="" class="work-tile">
-            <img class="work-image" src="" alt="">
-            <p class=""work-title>Work title 4
-            </p>
+            <img class="img-tile placeholder" src="./assets/images/placeholder.png" alt="placeholder image">
+            <h4 class="work-title">
+                <span>In the Making
+                </span>
+            </h4>
         </a>
-        <a href="" class="work-tile">
-            <img class="work-image" src="" alt="">
-            <p class=""work-title>Work title 5
-            </p>
-        </a>
-    </div> 
-</section>
+    </div>
+</div> 
+
 </main>
-</section>
+
+
 <!--add icon to all the links-->
 <footer id="contact-me" class="contact-me">
-    <h3 class="contact-me"></h3>
-    <a class="btn-contact" href="https://open.spotify.com/user/livschif">Spotify
+    <h3 class="contact-me">Contact</h3>
+   <div class="contacts">
+    <a target="_blank" class="btn-contact" href="https://open.spotify.com/user/livschif">
+      <i class="fab fa-facebook-square">
+      </i>Spotify
     </a>
     <a class="btn-contact" href="https://github.com/livschif">Github
     </a>
@@ -87,6 +97,7 @@
     </a>
     <a class="btn-contact" href="tel:913-343-6270">Call me
     </a>
+   </div> 
 </footer>
 </body>
 </html>

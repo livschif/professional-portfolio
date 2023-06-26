@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     font-family: Georgia, serif;
@@ -73,67 +77,90 @@ a {
 
   .ab-text {
     position: absolute;
-    padding-left: 20px;
+    padding: 20px;
     line-height: 4rem;
   }
 
   p {
     font-size: 16px;
   }
-/* end of header properties
-.side-column {
-    margin: 20px;
+
+/* work section*/
+.work {
+  background-color: var(--body-yellow);
+  color: var(--grey);
+  width: 100%;
+}
+.work-text {
     padding: 20px;
-    float: left;
-    width: 30% ;
-    height: 100vh;
-    font-family: 'Gill Sans', sans-serif;
-    background-color: var(--body-yellow);
 }
 
-.port-img {
-    max-width: 100px;
+.work-grid {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
- .about-me {
-    display: flex;
+
+.survey {
+    width: 1015px;
+    height: 700px;
+}
+.tribute {
+    width: 500px;
+    height: 333px;
+}
+
+.placeholder {
+    width: 500px;
+    height: 100%;
+}
+
+.work-tile {
+   position: relative;
+}
+
+.work-title {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
     width: 100%;
-    padding: 40px;
-    background-color: var(--body-yellow);
-    align-items: center;
- }
+}
 
- .side-about {
- }
+h4 span {
+    color: var(--grey); 
+    font: bold 30px/20px georgia, serif; 
+    background: var(--body-yellow);
+    padding: 10px; 
+}
 
+/* contact section*/
 
-/*
-.header {
-    color: var(--grey);
+.contact-me {
     background-color: var(--lemon-chiffon);
-    padding: 1.5rem 1rem;
+    color: var(--grey);
+    padding: 20px;
 }
 
-.header h1 p {
-    font-size: 3.5rem;
+.contacts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
-.header p {
-   font-size: 2rem;
+.btn-contact {
+    font-size: 2rem;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-
-/*
-ul {
-   list-style: none;
-   font-size: 2rem;
-}
-
-li {
-    display: inline;
-    float: right;
-    margin: 1.2rem
-}
-
-a {
-    text-decoration: none;
+.btn-contact:hover {
+    transform: translateY(8px);
 }
