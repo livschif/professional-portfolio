@@ -1,3 +1,4 @@
+/* general styling */
 :root {
     --grey: #545861;
     --lemon-chiffon: #FFFACD;
@@ -35,19 +36,8 @@ a {
     color: var(--grey);
     text-decoration: none;
 }
-/* nav bar 
-.work-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px 10px;
-}
-*/
+
+/*nav bar */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -100,7 +90,6 @@ li:hover {
 
 .__img {
     padding: 20px;
-    display:;
     width: 400px;
     height: 500px;
     float: right;
@@ -121,57 +110,6 @@ li:hover {
     }
 }
 
-   /* margin: 20px 30px 0 0;
-    width: 200px;
-    object-fit: contain;
-    vertical-align: right;
-
-}
-}
-
-/* about me 
-  .about-me {
-    display: inline-block;
-    align-items:center;
-    background-color: var(--body-yellow);
-    color: var(--grey);
-    max-width: 100%;
-  }
-
-  @media screen and (max-width: 1000px) {
-    .about-me {
-        background-color: var(--alt-col);
-        color: var(--alt-text);
-    }
-}
-
-.img {
-    width: 200px;
-    height: 50%;
-    
-}
-
-  .port-img{
-    width: 400px;
-    height: 100%;
-    padding: 20px;
-    float: right;
-  }
-
-  .ab-text {
-    /*position: abslute;
-    padding: 20px;
-    line-height: 4rem;
-  }
-
- p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 20px;
-    width: 60%;
-    margin:
-}
-*/
 /* work section*/
 .work {
     background-color: var(--body-yellow);
@@ -242,8 +180,8 @@ h4 span {
         color: var(--alt-text);
     }
 }
-/* contact section*/
 
+/* contact section*/
 .contact-me {
     background-color: var(--lemon-chiffon);
     color: var(--grey);
